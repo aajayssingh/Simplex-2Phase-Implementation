@@ -1,11 +1,22 @@
 # Simplex-2Phase-Implementation
 This project is a C++ implementation of simplex two phase Algorithm. For the standard linear programs of maximization type.
 
+
+Compilation steps :
+• set the input tableau in standard form in inp-params.txt.
+• g++ -std=C++11 main.cpp -o exec.
+
+
+Run
+./exec
+
+
+
 Problem Statement : 
 Implemented Two Phase Simplex algorithm for maximization LP problem , the input is assumed
 to be in standard form Ax ≤ b.
-1
-Input description :
+
+1. Input description :
 Assume following maximization LP problem
 Maximize z = - x1 - x2 + 0s1 + 0s2 - A1 - A2
 subject to the constraints :
@@ -25,8 +36,9 @@ corresponding matrix in std input is :
 we input above nxm matrix in inp-params.txt file where n = 7, m =3, unknowns = 2,
 artificial vars = 2.
 are inputs asked .
-2
-Output Description :
+
+
+2. Output Description :
 output is the tableau at each simplex iteration in
 x1 x2 s1 s2 a1 a2
 z
@@ -57,10 +69,4 @@ and we proceed to phase 2 , removing all artificial variables.
 may exist. So, we proceed to phase 2 , removing non basic artificial variable (setting
 corresponding column 0)and ensuring that for artificial variables which are in basis min
 ratio is 0.
-3
-Compilation steps :
-• set the input tableau in standard form in inp-params.txt.
-• g++ -std=C++11 main.cpp -o exec.
-4
-Run
-./exec
+
